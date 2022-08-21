@@ -42,7 +42,7 @@ CREATE
 (Douglas)-[:PRODUCED]->(OneFlew)
 
 
-CREATE (AFewGoodMen:Movie {title:"A Few Good Men", released:1992,  IMDbrate:7.7, Box office: 243.2})
+CREATE (AFewGoodMen:Movie {title:"A Few Good Men", released:1992, IMDbrate:7.7, Box office: 243.2})
 CREATE (TomC:Person {name:'Tom Cruise', born:1962})
 CREATE (DemiM:Person {name:'Demi Moore', born:1962})
 CREATE (KevinB:Person {name:'Kevin Bacon', born:1958})
@@ -72,4 +72,22 @@ CREATE
 (RobR)-[:DIRECTED]->(AFewGoodMen),
 (AaronS)-[:WROTE]->(AFewGoodMen)
 
+
+CREATE (VforVendetta:Movie {title:'V for Vendetta', released:2006, IMDbrate:8.2, Box office: 132.5 })
+CREATE (Portman:Person {name:'Natalie Portman', born:1981})
+CREATE (Rea:Person {name:'Stephen Rea', born:1946})
+CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
+CREATE (Hurt:Person {name:'John Hurt', born:1940})
+CREATE (Miles:Person {name:'Ben Miles', born:1967})
+CREATE (LillyW:Person {name:'Lilly Wachowski', born:1967})
+
+CREATE
+(Hugo)-[:ACTED_IN {roles:['V']}]->(VforVendetta),
+(Portman)-[:ACTED_IN {roles:['Evey Hammond']}]->(VforVendetta),
+(Rea)-[:ACTED_IN {roles:['Eric Finch']}]->(VforVendetta),
+(Hurt)-[:ACTED_IN {roles:['High Chancellor Adam Sutler']}]->(VforVendetta),
+(Miles)-[:ACTED_IN {roles:['Dascomb']}]->(VforVendetta),
+(JamesM)-[:DIRECTED]->(VforVendetta),
+(LillyW)-[:PRODUCED]->(VforVendetta),
+(LillyW)-[:WROTE]->(VforVendetta),
 
