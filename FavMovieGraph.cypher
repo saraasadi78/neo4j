@@ -1,4 +1,4 @@
-CREATE (LifeIsBeautiful:Movie {title:'Life Is Beautiful', released:1997, IMDbrate:8.6, Box office: 230.1})
+CREATE (LifeIsBeautiful:Movie {title:'Life Is Beautiful', released:1997, IMDbrate:8.6, Boxoffice: 230.1})
 CREATE (Benigni:Person {name:'Roberto Benigni', born:1952})
 CREATE (Braschi:Person {name:'Nicoletta Braschi', born:1960})
 CREATE (Cantarini:Person {name:'Giorgio Cantarini', born:1992})
@@ -14,7 +14,7 @@ CREATE
 (Piovani)-[:MUSIC]->(LifeIsBeautiful)
 
 
-CREATE (TheDevilsAdvocate:Movie {title:"The Devil's Advocate", released:1997,  IMDbrate:7.5, Box office:153})
+CREATE (TheDevilsAdvocate:Movie {title:"The Devil's Advocate", released:1997,  IMDbrate:7.5, Boxoffice:153})
 CREATE (Charlize:Person {name:'Charlize Theron', born:1975})
 CREATE (Al:Person {name:'Al Pacino', born:1940})
 CREATE (Keanu:Person {name:'Keanu Reeves', born:1964})
@@ -27,7 +27,7 @@ CREATE
 (Taylor)-[:DIRECTED]->(TheDevilsAdvocate)
 
 
-CREATE (OneFlew:Movie {title:'One Flew Over The Cuckoos Nest' released:1975, IMDbrate:8.7, Box office: 163.3})
+CREATE (OneFlew:Movie {title:'One Flew Over The Cuckoos Nest' , released:1975, IMDbrate:8.7, Boxoffice: 163.3})
 CREATE (Nicholson:Person {name:'Jack Nicholson', born:1937})
 CREATE (Fletcher:Person {name:'Louise Fletcher', born:1934})
 CREATE (Sampson:Person {name:'Will Sampson', born:1933})
@@ -42,7 +42,7 @@ CREATE
 (Douglas)-[:PRODUCED]->(OneFlew)
 
 
-CREATE (AFewGoodMen:Movie {title:"A Few Good Men", released:1992, IMDbrate:7.7, Box office: 243.2})
+CREATE (AFewGoodMen:Movie {title:"A Few Good Men", released:1992, IMDbrate:7.7, Boxoffice: 243.2})
 CREATE (TomC:Person {name:'Tom Cruise', born:1962})
 CREATE (DemiM:Person {name:'Demi Moore', born:1962})
 CREATE (KevinB:Person {name:'Kevin Bacon', born:1958})
@@ -73,7 +73,7 @@ CREATE
 (AaronS)-[:WROTE]->(AFewGoodMen)
 
 
-CREATE (VforVendetta:Movie {title:'V for Vendetta', released:2006, IMDbrate:8.2, Box office: 132.5 })
+CREATE (VforVendetta:Movie {title:'V for Vendetta', released:2006, IMDbrate:8.2, Boxoffice: 132.5 })
 CREATE (Portman:Person {name:'Natalie Portman', born:1981})
 CREATE (Rea:Person {name:'Stephen Rea', born:1946})
 CREATE (Hugo:Person {name:'Hugo Weaving', born:1960})
