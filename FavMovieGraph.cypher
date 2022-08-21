@@ -43,7 +43,7 @@ CREATE
 
 
 CREATE (AFewGoodMen:Movie {title:"A Few Good Men", released:1992, IMDbrate:7.7, Boxoffice: 243.2})
-CREATE (TomC:Person {name:'Tom Cruise', born:1962})
+CREATE (Cruise:Person {name:'Tom Cruise', born:1962})
 CREATE (DemiM:Person {name:'Demi Moore', born:1962})
 CREATE (KevinB:Person {name:'Kevin Bacon', born:1958})
 CREATE (KieferS:Person {name:'Kiefer Sutherland', born:1966})
@@ -57,8 +57,8 @@ CREATE (RobR:Person {name:'Rob Reiner', born:1947})
 CREATE (AaronS:Person {name:'Aaron Sorkin', born:1961})
 
 CREATE
-(TomC)-[:ACTED_IN {roles:['Lt. Daniel Kaffee']}]->(AFewGoodMen),
-(JackN)-[:ACTED_IN {roles:['Col. Nathan R. Jessup']}]->(AFewGoodMen),
+(Cruise)-[:ACTED_IN {roles:['Lt. Daniel Kaffee']}]->(AFewGoodMen),
+(Nicholson)-[:ACTED_IN {roles:['Col. Nathan R. Jessup']}]->(AFewGoodMen),
 (DemiM)-[:ACTED_IN {roles:['Lt. Cdr. JoAnne Galloway']}]->(AFewGoodMen),
 (KevinB)-[:ACTED_IN {roles:['Capt. Jack Ross']}]->(AFewGoodMen),
 (KieferS)-[:ACTED_IN {roles:['Lt. Jonathan Kendrick']}]->(AFewGoodMen),
