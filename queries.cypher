@@ -59,8 +59,28 @@ MATCH
 RETURN hanks, m1, coActors, m2, cruise
 
 
+//--------------------------------CRUD------------------------------------
 
+//create
+MATCH 
+(tom: person{name:"Tom Hanks"}), (meg: person {name:""Meg Ryan"})
+CREATE (tom)-[:FOLLOWS]->(meg)
 
+//delete oll relations of Tom Hanks:
+MATCH
+(tom: person { name="Tom Hanks"}) -[r]-()
+DELETE r
+
+//update
+MATCH (al: person {name:"Al Pacino"})
+SET al.born=1960
+//copying 
+MATCH(tom:person {name:"Tom Cruise"}), (al:person {name:"Al Pacino"})
+SET al=tom
+
+//using id
+MATCH(a:person) WHERE ID(a)=4 SET a.name="Sarah Jessica Parker" , a.born=1965
+SET a:Movie // add lable to node
 
 
 
